@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #0a0a23, #000);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#ui {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+  background: rgba(0,0,0,0.45);
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px rgba(0,140,255,0.3);
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
